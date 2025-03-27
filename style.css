@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Modalmenu {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -300px; /* скрытое состояние */
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: right 0.4s;
+  padding: 20px;
+}
+
+/* Класс для открытия меню */
+.Modalmenu.active {
+  right: 0;
+}
+
+.Modalmenu ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.Modalmenu ul li {
+  margin-bottom: 15px;
+}
+
+.Modalmenu ul li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.open {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
